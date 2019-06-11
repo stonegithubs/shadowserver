@@ -29,8 +29,13 @@ cat <<EOF | sudo tee ${CONFIG_FILE}
 {
   "server": "0.0.0.0",
   "server_port": ${SS_PORT},
+  "local_address":"127.0.0.1",
+  "local_port":1080,
+  "timeout":300,
   "password": "${SS_PASSWORD}",
-  "method": "${SS_METHOD}"
+  "method": "${SS_METHOD}",
+  "fast_open":false,
+  "workers":5,
 }
 EOF
 
