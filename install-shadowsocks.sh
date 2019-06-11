@@ -35,7 +35,7 @@ cat <<EOF | sudo tee ${CONFIG_FILE}
   "password": "${SS_PASSWORD}",
   "method": "${SS_METHOD}",
   "fast_open":false,
-  "workers":5,
+  "workers":5
 }
 EOF
 
