@@ -11,7 +11,7 @@ random-string()
 CONFIG_FILE=/etc/shadowsocks.json
 SERVICE_FILE=/etc/systemd/system/shadowsocks.service
 SS_PASSWORD=$(random-string 32)
-SS_PORT=3306
+SS_PORT=3308
 SS_METHOD=aes-256-cfb
 SS_IP=`ip route get 1 | awk '{print $NF;exit}'`
 GET_PIP_FILE=/tmp/get-pip.py
